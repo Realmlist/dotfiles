@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu>
 <menu id="root-menu" label="root-menu">
-  <menu id="Accessories" label="Hulpmiddelen">
+  <menu id="Accessories" label="Accessories">
     <item label="Bazaar">
       <action name="Execute"><command>bazaar</command></action>
     </item>
-    <item label="Bestanden">
+    <item label="Files">
       <action name="Execute"><command>nautilus --new-window</command></action>
     </item>
     <item label="Vim">
       <action name="Execute"><command>vim</command></action>
     </item>
   </menu> <!-- Accessories -->
-  <menu id="Settings" label="Instellingen">
-    <item label="Afdrukinstellingen">
-      <action name="Execute"><command>system-config-printer</command></action>
+  <menu id="Development" label="Development">
+    <item label="Code - OSS">
+      <action name="Execute"><command>code-oss</command></action>
     </item>
-    <item label="Displays">
-      <action name="Execute"><command>wdisplays</command></action>
+    <item label="Podman Desktop">
+      <action name="Execute"><command>podman-desktop</command></action>
     </item>
-    <item label="Geavanceerde netwerkconfiguratie">
+  </menu> <!-- Development -->
+  <menu id="Games" label="Games">
+    <item label="Steam">
+      <action name="Execute"><command>/usr/bin/steam</command></action>
+    </item>
+  </menu> <!-- Games -->
+  <menu id="Internet" label="Internet">
+    <item label="Advanced Network Configuration">
       <action name="Execute"><command>nm-connection-editor</command></action>
     </item>
-    <item label="Manage Printing">
-      <action name="Execute"><command>xdg-open http://localhost:631/</command></action>
-    </item>
-  </menu> <!-- Settings -->
-  <menu id="Internet" label="Internet">
-    <item label="Avahi SSH server browser">
+    <item label="Avahi SSH Server Browser">
       <action name="Execute"><command>/usr/bin/bssh</command></action>
     </item>
-    <item label="Avahi VNC server browser">
+    <item label="Avahi VNC Server Browser">
       <action name="Execute"><command>/usr/bin/bvnc</command></action>
     </item>
     <item label="Firefox">
       <action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
     </item>
-    <item label="Geavanceerde netwerkconfiguratie">
-      <action name="Execute"><command>nm-connection-editor</command></action>
+    <item label="LibreWolf">
+      <action name="Execute"><command>librewolf</command></action>
     </item>
     <item label="Steam">
       <action name="Execute"><command>/usr/bin/steam</command></action>
+    </item>
+    <item label="Vesktop">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=startvesktop --file-forwarding dev.vencord.Vesktop @@u  @@</command></action>
     </item>
   </menu> <!-- Internet -->
   <menu id="Multimedia" label="Multimedia">
@@ -54,24 +59,22 @@
       <action name="Execute"><command>/usr/bin/vlc --started-from-file</command></action>
     </item>
   </menu> <!-- Multimedia -->
-  <menu id="Development" label="Ontwikkeling">
-    <item label="Code - OSS">
-      <action name="Execute"><command>code-oss</command></action>
+  <menu id="Settings" label="Settings">
+    <item label="Advanced Network Configuration">
+      <action name="Execute"><command>nm-connection-editor</command></action>
     </item>
-    <item label="Podman Desktop">
-      <action name="Execute"><command>podman-desktop</command></action>
+    <item label="Displays">
+      <action name="Execute"><command>wdisplays</command></action>
     </item>
-  </menu> <!-- Development -->
-  <menu id="Games" label="Spelletjes">
-    <item label="Steam">
-      <action name="Execute"><command>/usr/bin/steam</command></action>
+    <item label="Manage Printing">
+      <action name="Execute"><command>xdg-open http://localhost:631/</command></action>
     </item>
-  </menu> <!-- Games -->
-  <menu id="System" label="Systeem">
-    <item label="Afdrukinstellingen">
+    <item label="Print Settings">
       <action name="Execute"><command>system-config-printer</command></action>
     </item>
-    <item label="Avahi zeroconf browser">
+  </menu> <!-- Settings -->
+  <menu id="System" label="System">
+    <item label="Avahi Zeroconf Browser">
       <action name="Execute"><command>/usr/bin/avahi-discover</command></action>
     </item>
     <item label="btop++">
@@ -91,6 +94,9 @@
     </item>
     <item label="Parental Controls">
       <action name="Execute"><command>malcontent-control</command></action>
+    </item>
+    <item label="Print Settings">
+      <action name="Execute"><command>system-config-printer</command></action>
     </item>
   </menu> <!-- System -->
 </menu> <!-- root-menu -->

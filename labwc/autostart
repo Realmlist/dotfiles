@@ -1,3 +1,3 @@
 kanshi & 
-noctalia &
+qs -c noctalia-shell &
 flatpak run dev.vencord.Vesktop &
