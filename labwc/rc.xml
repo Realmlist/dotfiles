@@ -16,8 +16,7 @@
 
   <core>
     <gap>10</gap>
-    <hdr>yes</hdr>
-    <allowTearing>no</allowTearing>
+    <!-- <hdr>yes</hdr> -->
     <primarySelection>yes</primarySelection>
   </core>
 
