@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+<menu id="root-menu" label="root-menu">
+  <menu id="Accessories" label="Hulpmiddelen">
+    <item label="Bazaar">
+      <action name="Execute"><command>bazaar</command></action>
+    </item>
+    <item label="Bestanden">
+      <action name="Execute"><command>nautilus --new-window</command></action>
+    </item>
+    <item label="Vim">
+      <action name="Execute"><command>vim</command></action>
+    </item>
+  </menu> <!-- Accessories -->
+  <menu id="Settings" label="Instellingen">
+    <item label="Afdrukinstellingen">
+      <action name="Execute"><command>system-config-printer</command></action>
+    </item>
+    <item label="Displays">
+      <action name="Execute"><command>wdisplays</command></action>
+    </item>
+    <item label="Geavanceerde netwerkconfiguratie">
+      <action name="Execute"><command>nm-connection-editor</command></action>
+    </item>
+    <item label="Manage Printing">
+      <action name="Execute"><command>xdg-open http://localhost:631/</command></action>
+    </item>
+  </menu> <!-- Settings -->
+  <menu id="Internet" label="Internet">
+    <item label="Avahi SSH server browser">
+      <action name="Execute"><command>/usr/bin/bssh</command></action>
+    </item>
+    <item label="Avahi VNC server browser">
+      <action name="Execute"><command>/usr/bin/bvnc</command></action>
+    </item>
+    <item label="Firefox">
+      <action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
+    </item>
+    <item label="Geavanceerde netwerkconfiguratie">
+      <action name="Execute"><command>nm-connection-editor</command></action>
+    </item>
+    <item label="Steam">
+      <action name="Execute"><command>/usr/bin/steam</command></action>
+    </item>
+  </menu> <!-- Internet -->
+  <menu id="Multimedia" label="Multimedia">
+    <item label="Qt V4L2 test Utility">
+      <action name="Execute"><command>qv4l2</command></action>
+    </item>
+    <item label="Qt V4L2 video capture utility">
+      <action name="Execute"><command>qvidcap</command></action>
+    </item>
+    <item label="VLC media player">
+      <action name="Execute"><command>/usr/bin/vlc --started-from-file</command></action>
+    </item>
+  </menu> <!-- Multimedia -->
+  <menu id="Development" label="Ontwikkeling">
+    <item label="Code - OSS">
+      <action name="Execute"><command>code-oss</command></action>
+    </item>
+    <item label="Podman Desktop">
+      <action name="Execute"><command>podman-desktop</command></action>
+    </item>
+  </menu> <!-- Development -->
+  <menu id="Games" label="Spelletjes">
+    <item label="Steam">
+      <action name="Execute"><command>/usr/bin/steam</command></action>
+    </item>
+  </menu> <!-- Games -->
+  <menu id="System" label="Systeem">
+    <item label="Afdrukinstellingen">
+      <action name="Execute"><command>system-config-printer</command></action>
+    </item>
+    <item label="Avahi zeroconf browser">
+      <action name="Execute"><command>/usr/bin/avahi-discover</command></action>
+    </item>
+    <item label="btop++">
+      <action name="Execute"><command>btop</command></action>
+    </item>
+    <item label="Hardware Locality lstopo">
+      <action name="Execute"><command>lstopo</command></action>
+    </item>
+    <item label="Htop">
+      <action name="Execute"><command>htop</command></action>
+    </item>
+    <item label="kitty">
+      <action name="Execute"><command>kitty</command></action>
+    </item>
+    <item label="Manage Printing">
+      <action name="Execute"><command>xdg-open http://localhost:631/</command></action>
+    </item>
+    <item label="Parental Controls">
+      <action name="Execute"><command>malcontent-control</command></action>
+    </item>
+  </menu> <!-- System -->
+</menu> <!-- root-menu -->
+</openbox_menu>
