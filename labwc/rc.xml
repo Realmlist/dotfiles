@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<labwc_config>
+  <keyboard>
+    <default /> <!-- TECHNICAL NOTE: The <default/> element includes all the built-in keybinds as described here: https://labwc.github.io/labwc-config.5.html#entry_keyboard_default -->
+
+    <!-- The W- prefix refers to the Super key -->
+    <keybind key="W-t">
+      <action name="Execute" command="kitty" />
+    </keybind>
+  </keyboard>
+</labwc_config>
