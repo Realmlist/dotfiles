@@ -6,8 +6,16 @@ kanshi >/dev/null 2>&1 &
 # Launch noctalia
 qs -c noctalia-shell >/dev/null 2>&1 &
 
+# OpenRGB
+openrgb -c 00FF00 --startminimized &
+
 # Polkit
 pkttyagent &
 
 # Autostart Vesktop
 flatpak run dev.vencord.Vesktop &
+
+# Nextcloud Desktop Client
+flatpak run com.nextcloud.desktopclient.nextcloud &
+
+steam -silent &

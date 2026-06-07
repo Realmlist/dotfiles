@@ -2,3 +2,8 @@ profile {
     output DP-3 position 0,0 mode 3840x2160@59.9970 scale 1.50 transform normal
     output DP-2 position 2559,0 mode 3840x2160@59.9970 scale 1.50 transform normal
 }
+
+profile {
+    output DP-6 position 0,0 mode 3840x2160@59.9970 scale 1.50 transform normal
+    output DP-5 position 2559,0 mode 3840x2160@59.9970 scale 1.50 transform normal
+}

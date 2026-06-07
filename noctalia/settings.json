@@ -30,8 +30,8 @@
     "audio": {
         "mprisBlacklist": [
         ],
-        "preferredPlayer": "vlc",
-        "spectrumFrameRate": 30,
+        "preferredPlayer": "cine",
+        "spectrumFrameRate": 60,
         "spectrumMirrored": true,
         "visualizerType": "linear",
         "volumeFeedback": false,
@@ -47,7 +47,7 @@
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 2,
-        "density": "default",
+        "density": "spacious",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
         "fontScale": 1,
@@ -150,7 +150,8 @@
                     "hidePassive": false,
                     "id": "Tray",
                     "pinned": [
-                        "Flameshot"
+                        "Flameshot",
+                        "Vesktop"
                     ]
                 },
                 {
@@ -242,6 +243,9 @@
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false
+                },
+                {
+                    "id": "plugin:privacy-indicator"
                 }
             ]
         }
@@ -271,11 +275,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "tonal-spot",
+        "generationMethod": "content",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Eldritch",
+        "predefinedScheme": "One Dark Two",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -353,8 +357,21 @@
                         "roundedCorners": true,
                         "scale": 1.4273024181623395,
                         "showBackground": true,
-                        "x": 11,
-                        "y": 46
+                        "x": 8,
+                        "y": 56
+                    },
+                    {
+                        "clockColor": "none",
+                        "clockStyle": "minimal",
+                        "customFont": "",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
+                        "roundedCorners": true,
+                        "scale": 1,
+                        "showBackground": true,
+                        "useCustomFont": false,
+                        "x": 2444,
+                        "y": 1362
                     }
                 ]
             }
@@ -389,9 +406,11 @@
         "onlySameOutput": false,
         "pinnedApps": [
             "thorium-browser",
-            "org.gnome.Nautilus",
+            "thunar",
             "vesktop",
-            "io.github.kolunmi.Bazaar"
+            "bazaar",
+            "thorium-jnpecgipniidlgicjocehkhajgdnjekh-Default",
+            "thorium-ojibjkjikcpjonjjngfkegflhmffeemk-Default"
         ],
         "pinnedStatic": true,
         "position": "bottom",
@@ -411,7 +430,7 @@
         "clockFormat": "hh\\nmm",
         "clockStyle": "digital",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.5,
+        "dimmerOpacity": 0.2,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
@@ -520,11 +539,11 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": false,
+        "enabled": true,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "4001"
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,

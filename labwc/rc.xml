@@ -42,6 +42,9 @@
     <keybind key="W-r">
       <action name="Execute" command="labwc --reconfigure" />
     </keybind>
+    <keybind key="W-;">
+      <action name="Execute" command="emote" />
+    </keybind>
     <keybind key="Print">
       <action name="Execute">
         <command>sh -c 'grim -g "$(slurp)" - | swappy -f -'</command>
