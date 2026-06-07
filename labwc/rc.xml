@@ -2,6 +2,14 @@
 <labwc_config>
   <theme>
     <name>noctalia</name>
+    <icon>papirus</icon>
+    <cornerRadius>10</cornerRadius>
+    <titlebar>
+      <layout>icon:iconify,max,close</layout>
+      <showTitle>yes</showTitle>
+      <dropShadows>yes</dropShadows>
+      <dropShadowsOnTiled>yes</dropShadowsOnTiled>
+    </titlebar>
   </theme>
   
   <!-- CORE CONFIG -->
@@ -9,7 +17,13 @@
   <core>
     <gap>10</gap>
     <hdr>yes</hdr>
+    <allowTearing>no</allowTearing>
+    <primarySelection>yes</primarySelection>
   </core>
+
+  <placement>
+    <policy>automatic</policy>
+  </placement>
   
   <!-- Thumbnail-based window switcher -->
   <windowSwitcher preview="no" outlines="yes">
@@ -20,6 +34,7 @@
   
   <keyboard>
     <default /> <!-- TECHNICAL NOTE: The <default/> element includes all the built-in keybinds as described here: https://labwc.github.io/labwc-config.5.html#entry_keyboard_default -->
+    <numlock>on</numlock>
 
     <!-- The W- prefix refers to the Super key -->
     <keybind key="W-t">
@@ -28,10 +43,16 @@
     <keybind key="W-r">
       <action name="Execute" command="labwc --reconfigure" />
     </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>sh -c 'grim -g "$(slurp)" - | swappy -f -'</command>
+      </action>
+    </keybind>
     
     <!-- # NOCTALIA # -->
     <!-- Core keys -->
     <keybind key="W-space"><action name="Execute"><command>qs -c noctalia-shell ipc call launcher toggle</command></action></keybind>
+    <keybind key="Super_L" onRelease="yes"><action name="Execute"><command>qs -c noctalia-shell ipc call launcher toggle</command></action></keybind>
     <keybind key="W-s"><action name="Execute"><command>qs -c noctalia-shell ipc call controlCenter toggle</command></action></keybind>
     <keybind key="W-,"><action name="Execute"><command>qs -c noctalia-shell ipc call settings toggle</command></action></keybind>
 

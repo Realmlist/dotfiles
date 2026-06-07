@@ -1,3 +1,13 @@
-kanshi & 
-qs -c noctalia-shell &
+systemctl --user --no-block start labwc-session.target
+
+# Monitor scaling
+kanshi >/dev/null 2>&1 & 
+
+# Launch noctalia
+qs -c noctalia-shell >/dev/null 2>&1 &
+
+# Polkit
+pkttyagent &
+
+# Autostart Vesktop
 flatpak run dev.vencord.Vesktop &
