@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <labwc_config>
   <theme>
-    <name>noctalia</name>
+    <name>Lubuntu Arc-Round Dark</name>
     <icon>papirus</icon>
     <cornerRadius>10</cornerRadius>
     <titlebar>

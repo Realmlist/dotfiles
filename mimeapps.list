@@ -1,5 +1,7 @@
 [Added Associations]
 video/mp4=io.github.diegopvlk.Cine.desktop;
+text/plain=code-oss.desktop;
+application/zip=thunar.desktop;io.github.peazip.PeaZip.desktop;
 
 [Default Applications]
 application/x-xpinstall=librewolf.desktop
@@ -8,7 +10,7 @@ application/x-lzip=org.gnome.Nautilus.desktop
 application/x-lzip-compressed-tar=org.gnome.Nautilus.desktop
 application/x-xz=org.gnome.Nautilus.desktop
 application/x-zstd-compressed-tar=org.gnome.Nautilus.desktop
-application/zip=org.gnome.Nautilus.desktop
+application/zip=io.github.peazip.PeaZip.desktop
 application/x-lzma-compressed-tar=org.gnome.Nautilus.desktop
 application/x-tar=org.gnome.Nautilus.desktop
 application/x-compress=org.gnome.Nautilus.desktop
@@ -146,7 +148,6 @@ text/tab-separated-values=org.onlyoffice.desktopeditors.desktop
 application/pdf=org.onlyoffice.desktopeditors.desktop
 application/vnd.apple.numbers=org.onlyoffice.desktopeditors.desktop
 application/vnd.ms-powerpoint=org.onlyoffice.desktopeditors.desktop
-text/plain=org.onlyoffice.desktopeditors.desktop
 application/epub+zip=org.onlyoffice.desktopeditors.desktop
 application/vnd.sun.xml.calc=org.onlyoffice.desktopeditors.desktop
 application/x-hwp=org.onlyoffice.desktopeditors.desktop
@@ -203,3 +204,6 @@ image/x-portable-graymap=org.nomacs.ImageLounge.desktop
 image/bmp=org.nomacs.ImageLounge.desktop
 image/gif=org.nomacs.ImageLounge.desktop
 image/x-xpixmap=org.nomacs.ImageLounge.desktop
+x-scheme-handler/beeper=Beeper.desktop
+text/plain=org.gnome.TextEditor.desktop
+application/x-zerosize=org.gnome.TextEditor.desktop
