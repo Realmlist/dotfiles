@@ -2,17 +2,56 @@
 <openbox_menu>
 <menu id="root-menu" label="root-menu">
   <menu id="Accessories" label="Accessories">
+    <item label="About Xfce">
+      <action name="Execute"><command>xfce4-about</command></action>
+    </item>
     <item label="Bazaar">
       <action name="Execute"><command>bazaar</command></action>
     </item>
-    <item label="Files">
-      <action name="Execute"><command>nautilus --new-window</command></action>
+    <item label="Bottles">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=bottles --file-forwarding com.usebottles.bottles @@u  @@</command></action>
+    </item>
+    <item label="Bulk Rename">
+      <action name="Execute"><command>thunar --bulk-rename</command></action>
+    </item>
+    <item label="Emote">
+      <action name="Execute"><command>emote</command></action>
+    </item>
+    <item label="LocalSend">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=localsend --file-forwarding org.localsend.localsend_app @@u  @@</command></action>
+    </item>
+    <item label="Nextcloud desktop sync client">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=nextcloud --file-forwarding com.nextcloud.desktopclient.nextcloud @@u  @@</command></action>
+    </item>
+    <item label="OpenRGB">
+      <action name="Execute"><command>openrgb</command></action>
+    </item>
+    <item label="PeaZip">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=peazip --file-forwarding io.github.peazip.PeaZip @@  @@</command></action>
+    </item>
+    <item label="ProtonPlus">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=protonplus com.vysp3r.ProtonPlus</command></action>
+    </item>
+    <item label="selectdefaultapplication">
+      <action name="Execute"><command>selectdefaultapplication</command></action>
+    </item>
+    <item label="Text Editor">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=gnome-text-editor --file-forwarding org.gnome.TextEditor @@u  @@</command></action>
+    </item>
+    <item label="Thunar File Manager">
+      <action name="Execute"><command>thunar</command></action>
     </item>
     <item label="Vim">
       <action name="Execute"><command>vim</command></action>
     </item>
+    <item label="Winetricks">
+      <action name="Execute"><command>winetricks --gui</command></action>
+    </item>
   </menu> <!-- Accessories -->
   <menu id="Development" label="Development">
+    <item label="CMake">
+      <action name="Execute"><command>cmake-gui</command></action>
+    </item>
     <item label="Code - OSS">
       <action name="Execute"><command>code-oss</command></action>
     </item>
@@ -21,10 +60,33 @@
     </item>
   </menu> <!-- Development -->
   <menu id="Games" label="Games">
+    <item label="Bottles">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=bottles --file-forwarding com.usebottles.bottles @@u  @@</command></action>
+    </item>
+    <item label="Goverlay">
+      <action name="Execute"><command>goverlay</command></action>
+    </item>
+    <item label="Heroic Games Launcher">
+      <action name="Execute"><command>/opt/Heroic/heroic</command></action>
+    </item>
+    <item label="ProtonPlus">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=protonplus com.vysp3r.ProtonPlus</command></action>
+    </item>
     <item label="Steam">
       <action name="Execute"><command>/usr/bin/steam</command></action>
     </item>
   </menu> <!-- Games -->
+  <menu id="Graphics" label="Graphics">
+    <item label="Bottles">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=bottles --file-forwarding com.usebottles.bottles @@u  @@</command></action>
+    </item>
+    <item label="Document Viewer">
+      <action name="Execute"><command>evince</command></action>
+    </item>
+    <item label="nomacs">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=nomacs --file-forwarding org.nomacs.ImageLounge @@  @@</command></action>
+    </item>
+  </menu> <!-- Graphics -->
   <menu id="Internet" label="Internet">
     <item label="Advanced Network Configuration">
       <action name="Execute"><command>nm-connection-editor</command></action>
@@ -35,47 +97,106 @@
     <item label="Avahi VNC Server Browser">
       <action name="Execute"><command>/usr/bin/bvnc</command></action>
     </item>
+    <item label="Beeper">
+      <action name="Execute"><command>/home/realmlist/Applications/Beeper-4.2.892-x86_64_9cb7ea0b584f9e958bbc51e80f7c91ab.AppImage</command></action>
+    </item>
+    <item label="Beeper (4.2.892)">
+      <action name="Execute"><command>/home/realmlist/Applications/Beeper-4.2.892-x86_64_9cb7ea0b584f9e958bbc51e80f7c91ab.AppImage --no-sandbox</command></action>
+    </item>
     <item label="Firefox">
       <action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
     </item>
     <item label="LibreWolf">
       <action name="Execute"><command>librewolf</command></action>
     </item>
+    <item label="LocalSend">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=localsend --file-forwarding org.localsend.localsend_app @@u  @@</command></action>
+    </item>
     <item label="Steam">
       <action name="Execute"><command>/usr/bin/steam</command></action>
+    </item>
+    <item label="Thorium Browser">
+      <action name="Execute"><command>/usr/bin/thorium-browser</command></action>
+    </item>
+    <item label="Thorium Shell">
+      <action name="Execute"><command>/usr/bin/thorium-shell</command></action>
     </item>
     <item label="Vesktop">
       <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=startvesktop --file-forwarding dev.vencord.Vesktop @@u  @@</command></action>
     </item>
   </menu> <!-- Internet -->
   <menu id="Multimedia" label="Multimedia">
+    <item label="Cine">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=cine --file-forwarding io.github.diegopvlk.Cine --new-window @@u  @@</command></action>
+    </item>
     <item label="Qt V4L2 test Utility">
       <action name="Execute"><command>qv4l2</command></action>
     </item>
     <item label="Qt V4L2 video capture utility">
       <action name="Execute"><command>qvidcap</command></action>
     </item>
+    <item label="VacuumTube">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=startvacuumtube --file-forwarding rocks.shy.VacuumTube @@u  @@</command></action>
+    </item>
     <item label="VLC media player">
       <action name="Execute"><command>/usr/bin/vlc --started-from-file</command></action>
     </item>
   </menu> <!-- Multimedia -->
+  <menu id="Office" label="Office">
+    <item label="Document Viewer">
+      <action name="Execute"><command>evince</command></action>
+    </item>
+    <item label="Merkuro">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=merkurolauncher org.kde.merkuro</command></action>
+    </item>
+    <item label="Merkuro Calendar">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=merkuro-calendar --file-forwarding org.kde.merkuro @@u  @@</command></action>
+    </item>
+    <item label="Merkuro Contacts">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=merkuro-contact org.kde.merkuro</command></action>
+    </item>
+    <item label="ONLYOFFICE">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=desktopeditors --file-forwarding org.onlyoffice.desktopeditors @@u  @@</command></action>
+    </item>
+  </menu> <!-- Office -->
   <menu id="Settings" label="Settings">
     <item label="Advanced Network Configuration">
       <action name="Execute"><command>nm-connection-editor</command></action>
     </item>
+    <item label="AppImageLauncher Settings">
+      <action name="Execute"><command>AppImageLauncherSettings</command></action>
+    </item>
     <item label="Displays">
       <action name="Execute"><command>wdisplays</command></action>
+    </item>
+    <item label="GTK Settings">
+      <action name="Execute"><command>nwg-look</command></action>
     </item>
     <item label="Manage Printing">
       <action name="Execute"><command>xdg-open http://localhost:631/</command></action>
     </item>
+    <item label="NVIDIA X Server Settings">
+      <action name="Execute"><command>/usr/bin/nvidia-settings</command></action>
+    </item>
     <item label="Print Settings">
       <action name="Execute"><command>system-config-printer</command></action>
+    </item>
+    <item label="Qt6 Settings">
+      <action name="Execute"><command>qt6ct</command></action>
+    </item>
+    <item label="Removable Drives and Media">
+      <action name="Execute"><command>thunar-volman-settings</command></action>
+    </item>
+    <item label="Thunar Preferences">
+      <action name="Execute"><command>thunar-settings</command></action>
     </item>
   </menu> <!-- Settings -->
   <menu id="System" label="System">
     <item label="Avahi Zeroconf Browser">
       <action name="Execute"><command>/usr/bin/avahi-discover</command></action>
+    </item>
+    <item label="Bottles">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=bottles --file-forwarding com.usebottles.bottles @@u  @@</command></action>
     </item>
     <item label="btop++">
       <action name="Execute"><command>btop</command></action>
@@ -98,6 +219,17 @@
     <item label="Print Settings">
       <action name="Execute"><command>system-config-printer</command></action>
     </item>
+    <item label="Thunar File Manager">
+      <action name="Execute"><command>thunar</command></action>
+    </item>
   </menu> <!-- System -->
+  <menu id="Other" label="Other">
+    <item label="Proton Calendar">
+      <action name="Execute"><command>/opt/thorium-browser/thorium-browser --profile-directory=Default --app-id=ojibjkjikcpjonjjngfkegflhmffeemk</command></action>
+    </item>
+    <item label="Proton Mail">
+      <action name="Execute"><command>/opt/thorium-browser/thorium-browser --profile-directory=Default --app-id=jnpecgipniidlgicjocehkhajgdnjekh</command></action>
+    </item>
+  </menu> <!-- Other -->
 </menu> <!-- root-menu -->
 </openbox_menu>

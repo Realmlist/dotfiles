@@ -2,10 +2,13 @@
 video/mp4=io.github.diegopvlk.Cine.desktop;
 text/plain=code-oss.desktop;
 application/zip=thunar.desktop;io.github.peazip.PeaZip.desktop;
+application/xml=code-oss.desktop;
+application/json=code-oss.desktop;
+text/x-ms-regedit=code-oss.desktop;
 
 [Default Applications]
 application/x-xpinstall=librewolf.desktop
-application/json=librewolf.desktop
+application/json=code-oss.desktop
 application/x-lzip=org.gnome.Nautilus.desktop
 application/x-lzip-compressed-tar=org.gnome.Nautilus.desktop
 application/x-xz=org.gnome.Nautilus.desktop
@@ -95,7 +98,6 @@ audio/vnd.wave=io.github.diegopvlk.Cine.desktop
 video/mpeg=io.github.diegopvlk.Cine.desktop
 video/3gpp=io.github.diegopvlk.Cine.desktop
 application/vnd.ms-asf=io.github.diegopvlk.Cine.desktop
-inode/directory=io.github.diegopvlk.Cine.desktop
 audio/flac=io.github.diegopvlk.Cine.desktop
 video/x-matroska=io.github.diegopvlk.Cine.desktop
 video/3gpp2=io.github.diegopvlk.Cine.desktop
@@ -207,3 +209,4 @@ image/x-xpixmap=org.nomacs.ImageLounge.desktop
 x-scheme-handler/beeper=Beeper.desktop
 text/plain=org.gnome.TextEditor.desktop
 application/x-zerosize=org.gnome.TextEditor.desktop
+inode/directory=thunar.desktop

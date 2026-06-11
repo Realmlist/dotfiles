@@ -18,4 +18,8 @@ flatpak run dev.vencord.Vesktop &
 # Nextcloud Desktop Client
 flatpak run com.nextcloud.desktopclient.nextcloud &
 
+# Run steam in bg
 steam -silent &
+
+# Start emote picker bg service
+emote &

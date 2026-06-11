@@ -264,7 +264,7 @@
         "backlightDeviceMappings": [
         ],
         "brightnessStep": 5,
-        "enableDdcSupport": true,
+        "enableDdcSupport": false,
         "enforceMinimum": true
     },
     "calendar": {
@@ -406,12 +406,13 @@
         "indicatorOpacity": 0.6,
         "indicatorThickness": 6,
         "launcherIcon": "",
-        "launcherIconColor": "none",
+        "launcherIconColor": "primary",
         "launcherPosition": "start",
         "launcherUseDistroLogo": true,
         "monitors": [
             "DP-6",
-            "DP-3"
+            "DP-3",
+            "DP-5"
         ],
         "onlySameOutput": false,
         "pinnedApps": [
@@ -421,7 +422,8 @@
             "bazaar",
             "thorium-jnpecgipniidlgicjocehkhajgdnjekh-Default",
             "thorium-ojibjkjikcpjonjjngfkegflhmffeemk-Default",
-            "Beeper"
+            "Beeper",
+            "trilium"
         ],
         "pinnedStatic": true,
         "position": "bottom",
@@ -512,19 +514,19 @@
         "enabled": true,
         "fadeDuration": 5,
         "lockCommand": "",
-        "lockTimeout": 660,
+        "lockTimeout": 0,
         "resumeLockCommand": "",
-        "resumeScreenOffCommand": "",
+        "resumeScreenOffCommand": "wlopm --on DP-6 && wlopm --on DP-5",
         "resumeSuspendCommand": "",
-        "screenOffCommand": "",
-        "screenOffTimeout": 600,
+        "screenOffCommand": "wlopm --off DP-6 && wlopm --off DP-5",
+        "screenOffTimeout": 300,
         "suspendCommand": "",
-        "suspendTimeout": 1800
+        "suspendTimeout": 0
     },
     "location": {
         "analogClockInCalendar": false,
         "autoLocate": false,
-        "firstDayOfWeek": -1,
+        "firstDayOfWeek": 1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
         "name": "Geraardsbergen",
@@ -565,7 +567,7 @@
         "clearDismissed": true,
         "criticalUrgencyDuration": 15,
         "density": "default",
-        "enableBatteryToast": true,
+        "enableBatteryToast": false,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": false,
         "enableMediaToast": false,
@@ -599,7 +601,8 @@
         "enabledTypes": [
             0,
             1,
-            2
+            2,
+            3
         ],
         "location": "top_right",
         "monitors": [
@@ -670,8 +673,8 @@
                 "action": "userspaceReboot",
                 "command": "",
                 "countdownEnabled": true,
-                "enabled": false,
-                "keybind": ""
+                "enabled": true,
+                "keybind": "5"
             }
         ],
         "showHeader": true,

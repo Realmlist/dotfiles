@@ -21,7 +21,7 @@
   </core>
 
   <placement>
-    <policy>automatic</policy>
+    <!-- <policy>automatic</policy> -->
   </placement>
   
   <!-- Thumbnail-based window switcher -->
@@ -44,6 +44,9 @@
     </keybind>
     <keybind key="W-;">
       <action name="Execute" command="emote" />
+    </keybind>
+    <keybind key="W-m">
+      <action name="Execute" command="labwc-menu-generator > ~/.config/labwc/menu.xml" />
     </keybind>
     <keybind key="Print">
       <action name="Execute">
