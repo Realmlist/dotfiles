@@ -3,8 +3,10 @@ systemctl --user --no-block start labwc-session.target
 # Monitor scaling
 kanshi >/dev/null 2>&1 & 
 
-# Launch noctalia
-qs -c noctalia-shell >/dev/null 2>&1 &
+# Launch noctalia v4
+# qs -c noctalia-shell >/dev/null 2>&1 &
+# Launch noctalia v5
+noctalia >/dev/null 2>&1 &
 
 # OpenRGB
 openrgb -c 00FF00 --startminimized &
@@ -23,3 +25,6 @@ steam -silent &
 
 # Start emote picker bg service
 emote &
+
+# KDE Connect
+kdeconnect-indicator &

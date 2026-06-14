@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <labwc_config>
   <theme>
-    <name>Lubuntu Arc-Round Dark</name>
+    <name>noctalia</name>
     <icon>papirus</icon>
     <cornerRadius>10</cornerRadius>
     <titlebar>
@@ -54,20 +54,36 @@
       </action>
     </keybind>
     
-    <!-- # NOCTALIA # -->
-    <!-- Core keys -->
+
+    <!-- # NOCTALIA v4  # 
+    
     <keybind key="W-space"><action name="Execute"><command>qs -c noctalia-shell ipc call launcher toggle</command></action></keybind>
     <keybind key="Super_L" onRelease="yes"><action name="Execute"><command>qs -c noctalia-shell ipc call launcher toggle</command></action></keybind>
     <keybind key="W-s"><action name="Execute"><command>qs -c noctalia-shell ipc call controlCenter toggle</command></action></keybind>
     <keybind key="W-,"><action name="Execute"><command>qs -c noctalia-shell ipc call settings toggle</command></action></keybind>
 
-    <!-- Media keys -->
+    <
     <keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>qs -c noctalia-shell ipc call volume increase</command></action></keybind>
     <keybind key="XF86AudioLowerVolume"><action name="Execute"><command>qs -c noctalia-shell ipc call volume decrease</command></action></keybind>
     <keybind key="XF86AudioMute"><action name="Execute"><command>qs -c noctalia-shell ipc call volume muteOutput</command></action></keybind>
     <keybind key="XF86MonBrightnessUp"><action name="Execute"><command>qs -c noctalia-shell ipc call brightness increase</command></action></keybind>
     <keybind key="XF86MonBrightnessDown"><action name="Execute"><command>qs -c noctalia-shell ipc call brightness decrease</command></action></keybind>
-    <!-- # /NOCTALIA # -->
+    # /NOCTALIA v4 # -->
+
+    <!-- # NOCTALIA v5 # -->
+    <!-- Core keys -->
+    <keybind key="W-space"><action name="Execute"><command>noctalia msg panel-toggle launcher</command></action></keybind>
+    <keybind key="Super_L" onRelease="yes"><action name="Execute"><command>noctalia msg panel-toggle launcher</command></action></keybind>
+    <keybind key="W-s"><action name="Execute"><command>noctalia msg panel-toggle control-center</command></action></keybind>
+    <keybind key="W-,"><action name="Execute"><command>noctalia msg settings-toggle</command></action></keybind>
+
+    <!-- Media keys -->
+    <keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>noctalia msg volume-up</command></action></keybind>
+    <keybind key="XF86AudioLowerVolume"><action name="Execute"><command>noctalia msg volume-down</command></action></keybind>
+    <keybind key="XF86AudioMute"><action name="Execute"><command>noctalia msg volume-mute</command></action></keybind>
+    <keybind key="XF86MonBrightnessUp"><action name="Execute"><command>noctalia msg brightness-up</command></action></keybind>
+    <keybind key="XF86MonBrightnessDown"><action name="Execute"><command>noctalia msg brightness-down</command></action></keybind>
+    <!-- # /NOCTALIA v5 # -->
     
   </keyboard>
 

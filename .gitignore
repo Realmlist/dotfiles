@@ -1,6 +1,11 @@
-*/
+# Whitelist mode
+*
 
+# Files
 !.gitignore
+!mimeapps.list
+
+# Folders
 !kanshi/
 !kitty/
 !labwc/

@@ -184,15 +184,6 @@
                 },
                 {
                     "defaultSettings": {
-                        "entities": [
-                        ],
-                        "haToken": "",
-                        "haUrl": ""
-                    },
-                    "id": "plugin:hassio"
-                },
-                {
-                    "defaultSettings": {
                         "autoMount": false,
                         "fileBrowser": "yazi",
                         "hideWhenEmpty": false,
@@ -519,7 +510,7 @@
         "resumeScreenOffCommand": "wlopm --on DP-6 && wlopm --on DP-5",
         "resumeSuspendCommand": "",
         "screenOffCommand": "wlopm --off DP-6 && wlopm --off DP-5",
-        "screenOffTimeout": 300,
+        "screenOffTimeout": 1800,
         "suspendCommand": "",
         "suspendTimeout": 0
     },
